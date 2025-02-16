@@ -1,0 +1,126 @@
+.aside {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: var(--body-color);
+  border-right: 1px solid var(--border-color);
+  padding: 2.5rem;
+  width: 110px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 11;
+  transition: left 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distributes icons equally */
+  height: 300px; /* Adjust this to control the spacing between icons */
+}
+
+.nav__link {
+  font-size: 1.25rem; /* Increased size for better visibility */
+  color: var(--title-color);
+  font-weight: 700; /* Bold font weight */
+  transition: transform 0.3s, color 0.3s; /* Transition for effects */
+  position: relative; /* For tooltip positioning */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav__link:hover {
+  transform: scale(1.1); /* Scale up on hover */
+  color: var(--hover-color); /* Change color on hover */
+}
+
+.footer__button {
+  background-color: transparent;
+  font-weight: bold; /* Making footer button bold */
+}
+
+.copyright {
+  color: var(--title-color);
+  font-size: var(--small-font-size);
+  transform: rotate(-180deg);
+  writing-mode: vertical-rl;
+}
+
+.nav__toggle {
+  position: fixed;
+  top: 1.25rem;
+  left: 1.875rem;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  background-color: var(--body-color);
+  border: 2px solid var(--border-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transition: transform 0.3s, border-color 0.3s; /* Transition for border color change */
+  font-size: 1rem;
+}
+
+.nav__toggle:hover {
+  transform: rotate(360deg); /* Rotate on hover */
+}
+
+[data-theme="dark"] .nav__toggle {
+  border: 1px solid var(--title-color);
+}
+
+[data-theme="dark"] .nav__toggle > svg {
+  color: var(--title-color);
+}
+
+@media screen and (max-width: 1024px) {
+  .aside {
+    left: -110px;
+  }
+
+  .nav__toggle {
+    display: flex;
+  }
+
+  .nav__toggle-open {
+    left: 140px;
+  }
+
+  .show-menu {
+    left: 0;
+  }
+}
+
+/* Tooltip Styles */
+.tooltip {
+  position: absolute;
+  left: 100%; /* Position the tooltip to the right of the icon */
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--title-color); /* Background color of the tooltip */
+  color: var(--body-color); /* Text color of the tooltip */
+  padding: 5px 10px;
+  border-radius: 4px;
+  white-space: nowrap;
+  margin-left: 7px; /* Reduced space between icon and tooltip */
+  font-size: 0.75rem; /* Adjust font size for tooltip */
+  z-index: 7;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Added transition for transform */
+}
+
+.nav__link:hover .tooltip {
+  opacity: 1;
+  transform: translateY(-10%); /* Move tooltip slightly upwards on hover */
+}
+
+@media screen and (max-width: 1024px) {
+  .tooltip {
+    left: 105%; /* Adjust tooltip position for smaller screens */
+  }
+}

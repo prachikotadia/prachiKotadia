@@ -1,0 +1,100 @@
+.research__container {
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1.875rem;
+}
+
+.research__card {
+  text-align: center;
+  padding: 1.875rem;
+  border-radius: var(--border-radius);
+  background-color: var(--container-color);
+  transition: all 0.3s ease-in-out;
+}
+
+.research__card:hover {
+  transform: translateY(-10px);
+}
+
+.research__card:nth-child(1) {
+  background-color: rgb(108, 108, 229);
+  box-shadow: 0 5px 20px 0 rgb(108, 108, 229 / 50%);
+}
+
+.research__card:nth-child(2) {
+  background-color: rgb(249, 215, 76);
+  box-shadow: 0 5px 20px 0 rgb(249, 215, 76 / 50%);
+}
+
+.research__card:nth-child(3) {
+  background-color: rgb(249, 123, 139);
+  box-shadow: 0 5px 20px 0 rgb(249, 123, 139 / 50%);
+}
+
+.research__card:nth-child(4) {
+  background-color: rgb(111, 76, 81);
+  box-shadow: 0 5px 20px 0 rgb(249, 123, 139 / 50%);
+}
+.research__img {
+  margin-bottom: 1.25rem;
+}
+
+.research__title {
+  font-size: var(--h3-font-size);
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.research__description {
+  color: #f8f9fa;
+}
+
+.research__button {
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--border-radius);
+  background-color: #727070;
+  color: var(--body-color);
+  text-decoration: none;
+  column-gap: 1.875rem;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.research__button:hover {
+  background-color: var(--title-color);
+  color: #7e6969;
+}
+
+.research__card:nth-child(2) .research__title,
+.research__card:nth-child(2) .research__description {
+  color: var(--title-color);
+}
+
+[data-theme="dark"] .research__card:nth-child(2) .research__title,
+[data-theme="dark"] .research__card:nth-child(2) .research__description {
+  color: var(--body-color);
+}
+
+@media screen and (max-width: 1024px) {
+  .research__container {
+    grid-template-columns: repeat(2, 330px);
+    justify-content: center;
+    row-gap: 1.875rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .research__container {
+    grid-template-columns: 310px;
+    justify-content: center;
+    row-gap: 1.875rem;
+
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .research__container {
+    grid-template-columns: 1fr;
+  }
+}
+

@@ -1,0 +1,72 @@
+/* Container for the Google Translate widget */
+#google_translate_element {
+    margin: 1rem auto; /* Center the widget with margin */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+/* Style the Google Translate dropdown */
+body .goog-te-gadget-simple {
+    display: block !important; /* Ensure visibility */
+    position: fixed; /* Fixed position for accessibility */
+    top: 1rem; /* Adjust top position */
+    right: 1rem; /* Adjust right position */
+    z-index: 9999; /* Ensure it is on top */
+    background-color: var(--container-color); /* Background color */
+    border: 1px solid var(--border-color); /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: var(--shadow); /* Box shadow for depth */
+    padding: 0.5rem; /* Padding around the widget */
+    width: auto; /* Adjust width to fit content */
+    height: auto; /* Adjust height to fit content */
+}
+
+/* Hide the Google Translate icon */
+body .goog-te-gadget-simple .goog-te-combo {
+    display: none; /* Hide the dropdown arrow */
+}
+
+/* Style for the Google Translate dropdown button */
+body .goog-te-gadget-simple select {
+    background-color: var(--background-color); /* Background color for select */
+    color: var(--text-color); /* Text color */
+    border: none; /* Remove default border */
+    padding: 0.5rem; /* Padding inside the select */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1rem; /* Font size for readability */
+    cursor: pointer; /* Pointer cursor to indicate interaction */
+    appearance: none; /* Remove default styling for cross-browser consistency */
+    text-align: center; /* Center the text */
+}
+
+/* Custom focus style for the dropdown */
+body .goog-te-gadget-simple select:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 0 2px var(--accent-color); /* Custom focus style */
+}
+
+/* Style adjustments to hide other elements */
+body .goog-te-gadget-simple .goog-te-gadget-icon,
+body .goog-te-gadget-simple .goog-te-gadget-simple {
+    display: none; /* Hide additional elements */
+}
+
+/* Define variables for light and dark modes */
+[data-theme="light"] {
+    --container-color: #ffffff; /* White background for light mode */
+    --border-color: #cccccc; /* Light border color */
+    --background-color: #f8f8f8; /* Light background for select */
+    --text-color: #333333; /* Dark text for readability */
+    --accent-color: #007bff; /* Accent color for focus */
+    --shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+[data-theme="dark"] {
+    --container-color: #333333; /* Dark background for dark mode */
+    --border-color: #444444; /* Dark border color */
+    --background-color: #555555; /* Dark background for select */
+    --text-color: #f1f1f1; /* Light text for readability */
+    --accent-color: #1a73e8; /* Accent color for focus */
+    --shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Dark shadow */
+}

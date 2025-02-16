@@ -1,0 +1,219 @@
+/* Light Theme */
+:root {
+  --background-color: #f4f4f4;
+  --text-color: #333;
+  --popup-background-color: rgba(0, 0, 0, 0.435);
+  --button-background-color: #2070c5;
+  --button-hover-color: #0e4e93;
+  --course-color-1: linear-gradient(135deg, #83a2c3, #f4e4a3); /* Light Blue to Light Yellow */
+  --course-color-2: linear-gradient(135deg, #f8b8b8, #a3d9a5); /* Light Red to Light Green */
+  --course-color-3: linear-gradient(135deg, #f4e4a3, #83a2c3); /* Light Yellow to Light Blue */
+  --course-color-4: linear-gradient(135deg, #a3d9a5, #f8b8b8); /* Light Green to Light Red */
+  --section-name-color: #07125a;
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+  --background-color: #1a1a1a;
+  --text-color: #e0e0e0;
+  --popup-background-color: rgba(255, 255, 255, 0.436);
+  --button-background-color: #4a90e2;
+  --button-hover-color: #357ab8;
+  --course-color-1: linear-gradient(135deg, #0452a1, #2e7d32); /* Dark Blue to Dark Green */
+  --course-color-2: linear-gradient(135deg, #8a1b1b, #bc8f1b); /* Dark Red to Dark Yellow */
+  --course-color-3: linear-gradient(135deg, #bc8f1b, #0452a1); /* Dark Yellow to Dark Blue */
+  --course-color-4: linear-gradient(135deg, #2e7d32, #8a1b1b); /* Dark Green to Dark Red */
+  --section-name-color: #d0d1dc;
+
+}
+
+.courses {
+  padding: 2rem;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.courses h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--section-name-color);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.courses ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.courses li {
+  background: var(--course-color-1);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  position: relative;
+  overflow: hidden; /* Added for creative hover effect */
+}
+
+.courses li:nth-child(2) {
+  background: var(--course-color-2);
+}
+
+.courses li:nth-child(3) {
+  background: var(--course-color-3);
+}
+
+.courses li:nth-child(4) {
+  background: var(--course-color-4);
+}
+
+.courses li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.courses li::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.5s ease;
+}
+
+.courses li:hover::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.courses h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.25rem;
+  color: var(--text-color);
+  font-weight: 600;
+}
+
+.courses p {
+  margin: 0;
+  font-size: 0.875rem;
+}
+
+.courses .click-here {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  font-size: 0.5rem;
+  color: var(--text-color);
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--popup-background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background-color: var(--background-color);
+  padding: 2rem;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.popup-content h3 {
+  margin-top: 0;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--course-color-1);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.popup-content p {
+  margin: 1.5rem 0;
+  font-size: 1rem;
+}
+
+.popup-content button {
+  background-color: var(--button-background-color);
+  color: var(--text-color);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.popup-content button:hover {
+  background-color: var(--button-hover-color);
+  transform: scale(1.05);
+}
+
+/* Responsive Styles for Mobile */
+@media (max-width: 768px) {
+  .courses ul {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .courses li {
+    padding: 1rem;
+    font-size: 0.875rem;
+  }
+
+  .courses h2 {
+    font-size: 1.5rem;
+  }
+
+  .courses h3 {
+    font-size: 1rem;
+  }
+
+  .popup-content {
+    width: 95%;
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 480px) {
+  .courses ul {
+    grid-template-columns: 1fr;
+  }
+
+  .courses li {
+    padding: 0.75rem;
+    font-size: 0.75rem;
+  }
+
+  .courses h2 {
+    font-size: 1.25rem;
+  }
+
+  .courses h3 {
+    font-size: 0.875rem;
+  }
+
+  .popup-content {
+    width: 95%;
+    max-width: 400px;
+  }
+}

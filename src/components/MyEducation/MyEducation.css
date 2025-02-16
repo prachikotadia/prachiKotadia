@@ -1,0 +1,184 @@
+/* Light Theme */
+:root {
+  --background-color: #f4f4f4;
+  --text-color: #ffffff; /* Change to white */
+  --header-color: #0e145c; /* Dark Blue */
+  --slide-background: #a3c2e4; /* Light Blue */
+  --control-active-color: #0056b3;
+  --control-inactive-color: #ccc;
+  --arrow-color: #007bff;
+  --arrow-hover-color: #0056b3;
+}
+.education, .education h2, .education p, .education h3, .info-text {
+  color: #ffffff !important;
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+  --background-color: #1a1a1a;
+  --text-color: #e0e0e0;
+  --header-color: #787f86; /* Light Blue */
+  --slide-background: #003d79; /* Dark Blue */
+  --control-active-color: #4a90e2;
+  --control-inactive-color: #555;
+  --arrow-color: #4a90e2;
+  --arrow-hover-color: #357ab8;
+}
+
+.education {
+  padding: 2rem;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.education h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--header-color);
+}
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: 100%;
+}
+
+.slides li {
+  min-width: 100%;
+  padding: 2rem;
+  box-sizing: border-box;
+  background-color: var(--slide-background);
+  border-radius: 8px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.5s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+.slide-content {
+  text-align: center;
+}
+
+.slides h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.slides h3:hover {
+  text-decoration: underline;
+}
+
+.slides p {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.info-text {
+  position: absolute;
+  top: 1rem;
+  right: 10px;
+  font-size: 0.5rem;
+  color: var(--text-color);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+.slide:hover .click-arrow {
+  transform: scale(1.2);
+}
+
+/* Add this to set the background image for the slide */
+.slide {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.9; /* Adjust this value to control the fade effect */
+  position: relative;
+}
+
+.slide::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+  opacity: 0.7; /* Adjust the overlay opacity */
+}
+
+.slide-content {
+  position: relative;
+  z-index: 1; /* Ensures text stays above the background */
+}
+
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  position: relative;
+}
+
+.arrow {
+  background-color: var(--arrow-color);
+  border: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: background-color 0.3s ease;
+}
+
+.arrow.left {
+  left: 10px;
+}
+
+.arrow.right {
+  right: 10px;
+}
+
+
+.arrow.disabled {
+  background-color: var(--control-inactive-color);
+  cursor: not-allowed;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.dots button {
+  background-color: var(--control-inactive-color);
+  border: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin: 0 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dots button.active {
+  background-color: var(--control-active-color);
+}

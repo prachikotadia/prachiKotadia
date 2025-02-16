@@ -1,0 +1,201 @@
+:root {
+  --background-color: #f4f4f4;
+  --text-color: #333;
+  --section-background: #ffffff;
+  --section-border-color: #000000;
+
+  /* Skill Box Colors */
+  --skill-box-background: #ffffff;
+  --skill-box-hover-background: #ff9f00; /* More vibrant hover background */
+  --skill-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  --skill-box-hover-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  --logo-color: #333;
+}
+
+[data-theme="dark"] {
+  --background-color: #2e2e2e;
+  --text-color: #e0e0e0;
+  --section-background: #3a3a3a;
+  --section-border-color: #906d55;
+
+  --skill-box-background: #444444;
+  --skill-box-hover-background: #6a4e4e;
+  --skill-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  --skill-box-hover-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  --logo-color: #ffffff;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.skills {
+  background-color: var(--section-background);
+  padding: 40px;
+  margin: 40px auto;
+  max-width: 1200px;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  border: 3px solid var(--section-border-color); /* Bold border around the skills section */
+}
+
+.skills h2 {
+  text-align: center;
+  font-size: 3rem; /* Increased font size for the main title */
+  font-weight: 800; /* Bolder font weight */
+  margin-bottom: 40px;
+  color: var(--text-color);
+  transition: color 0.3s;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Adding shadow for depth */
+}
+
+.skills-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.skills-category {
+  flex: 1;
+  margin: 0 10px;
+  border: 2px solid var(--section-border-color); /* Bold border for categories */
+  border-radius: 10px;
+  padding: 20px;
+  background-color: var(--section-background);
+  transition: transform 0.3s;
+}
+
+.skills-category:hover {
+  transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+.skills-category h3 {
+  font-size: 1.8rem; /* Increased font size for category titles */
+  margin-bottom: 20px;
+  color: var(--text-color);
+  text-align: center;
+  transition: color 0.3s;
+  border-bottom: 3px solid var(--section-border-color); /* Thicker underline for category titles */
+  padding-bottom: 10px;
+}
+
+.category-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px; /* Increased gap for boxes */
+  justify-content: center;
+}
+
+.skill-box {
+  width: 110px; /* Slightly larger box */
+  height: 110px; /* Slightly larger box */
+  background-color: var(--skill-box-background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  border-radius: 20px;
+  transition: transform 0.4s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: var(--skill-box-shadow);
+  position: relative;
+  overflow: hidden;
+  border: 3px solid transparent;
+  font-weight: bold; /* Bold text inside boxes */
+  font-size: 1rem; /* Increased font size for box text */
+}
+
+.skill-box:hover {
+  transform: scale(1.1) rotate(2deg);
+  box-shadow: var(--skill-box-hover-shadow);
+  background-color: var(--skill-box-hover-background);
+  border-color: var(--section-border-color);
+}
+
+.skill-box .progress-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: linear-gradient(90deg, #ff6b6b, #fbc531);
+  transition: width 0.5s ease-in-out;
+}
+
+.skill-box:hover .progress-overlay {
+  width: var(--progress-percentage, 0%);
+}
+
+.skill-box p {
+  text-align: center;
+  font-size: 0.9rem; /* Adjusted font size for smaller boxes */
+  font-weight: 600;
+  color: var(--logo-color);
+  z-index: 1;
+  transition: color 0.3s;
+}
+
+.skill-box:hover p {
+  color: var(--section-border-color);
+}
+
+/* Skill Percentage on Hover */
+.skill-box .percentage {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: var(--section-border-color);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.skill-box:hover .percentage {
+  opacity: 1;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .skills-container {
+    flex-direction: column; /* Stack categories vertically on small screens */
+    gap: 20px;
+  }
+
+  .skills-category {
+    margin: 0; /* Reset margin for stacked categories */
+    border: none; /* Remove border for stacked layout */
+  }
+
+  .category-box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .skill-box {
+    width: 90px; /* Further smaller width on medium screens */
+    height: 90px; /* Further smaller height on medium screens */
+  }
+
+  .skill-box p {
+    font-size: 0.8rem; /* Adjusted font size for smaller boxes */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .skills-category {
+    margin: 0; /* Reset margin for stacked categories */
+    border: none; /* Remove border for stacked layout */
+  }
+
+  .skill-box {
+    width: 80px; /* Even smaller width for mobile */
+    height: 80px; /* Even smaller height for mobile */
+  }
+
+  .skill-box p {
+    font-size: 0.7rem; /* Adjusted font size for smaller boxes */
+  }
+}

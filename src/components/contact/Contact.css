@@ -1,0 +1,146 @@
+:root {
+  /* Light Theme Colors */
+  --primary-color-light: #e0f7fa; /* Light blue for light theme */
+  --secondary-color-light: #f1f1f1; /* Light grey for light theme */
+  --gradient-light: linear-gradient(135deg, var(--primary-color-light), var(--secondary-color-light));
+
+  /* Dark Theme Colors */
+  --primary-color-dark: #0d253f; /* Dark blue for dark theme */
+  --secondary-color-dark: #1a1a1a; /* Dark grey for dark theme */
+  --gradient-dark: linear-gradient(135deg, var(--border-light), var(--primary-color-light));
+
+  --box-background-light: #ffffff; /* Box background for light theme */
+  --box-background-dark: #1f1f1f; /* Dark background for dark theme */
+  
+  --text-light: #333; /* Text color for light theme */
+  --text-dark: #f9f9f9; /* Text color for dark theme */
+  --border-light: #ccc; /* Light border color */
+  --border-dark: #444; /* Dark border color */
+}
+
+[data-theme="light"] {
+  background: var(--gradient-light);
+  color: var(--text-light);
+}
+
+[data-theme="dark"] {
+  background: var(--primary-color-dark); /* Solid dark color for dark theme */
+  color: var(--text-dark);
+}
+
+.contact-section {
+  padding: 50px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: auto;
+  background: var(--box-background-light); /* Default box background for light theme */
+  color: var(--text-light); /* Text color for better visibility */
+  transition: background 0.5s ease, color 0.5s ease; /* Smooth transition between themes */
+}
+
+[data-theme="dark"] .contact-section {
+  background: var(--box-background-dark); /* Background for dark theme */
+}
+
+.contact-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow for title */
+}
+
+.contact-info {
+  font-size: 1.1rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-input-group {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Allow inputs to wrap on smaller screens */
+}
+
+.contact-input {
+  padding: 15px;
+  margin: 10px 0;
+  border: 1px solid var(--border-light);
+  border-radius: 5px;
+  font-size: 1rem;
+  flex: 1;
+  min-width: 45%; /* Minimum width to maintain layout */
+  margin-right: 10px;
+  transition: border 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.contact-input:last-child {
+  margin-right: 0; /* Remove margin for last input */
+}
+
+.contact-input:focus {
+  border: 1px solid white; /* Change border color on focus */
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.1); /* Lighten background on focus */
+}
+
+.contact-textarea {
+  padding: 15px;
+  margin: 10px 0;
+  border: 1px solid var(--border-light);
+  border-radius: 5px;
+  font-size: 1rem;
+  resize: vertical;
+  transition: border 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.contact-textarea:focus {
+  border: 1px solid white; /* Change border color on focus */
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.1); /* Lighten background on focus */
+}
+
+.contact-button {
+  padding: 15px;
+  background-color: #3f51b5; /* Primary button color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 10px;
+}
+
+.contact-button:hover {
+  background-color: #5c6bc0; /* Slightly lighter color on hover */
+  transform: translateY(-2px);
+}
+
+/* Dark theme button hover effect */
+[data-theme="dark"] .contact-button {
+  background-color: #ff4081; /* Bright button color for dark theme */
+}
+
+[data-theme="dark"] .contact-button:hover {
+  background-color: #ff80ab; /* Lighter button color on hover for dark theme */
+}
+
+@media screen and (max-width: 600px) {
+  .contact-input-group {
+    flex-direction: column; /* Stack inputs vertically */
+  }
+
+  .contact-input {
+    margin-right: 0;
+    margin-bottom: 10px; /* Space between inputs */
+  }
+}
