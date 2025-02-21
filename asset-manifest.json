@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/prachiKotadia/static/css/main.635f8ace.css",
-    "main.js": "/prachiKotadia/static/js/main.01cf618d.js",
+    "main.js": "/prachiKotadia/static/js/main.9f8ee65d.js",
     "static/media/profile.jpg": "/prachiKotadia/static/media/profile.ea23c843b7e57fa84549.jpg",
     "static/media/chicago.png": "/prachiKotadia/static/media/chicago.7d6be8b8c91cfaf2ead7.png",
     "static/media/travel.png": "/prachiKotadia/static/media/travel.3f1e703c327327f3a246.png",
@@ -19,10 +19,10 @@
     "static/media/dots-bg.svg": "/prachiKotadia/static/media/dots-bg.f9af2a6a4e3508808a05.svg",
     "index.html": "/prachiKotadia/index.html",
     "main.635f8ace.css.map": "/prachiKotadia/static/css/main.635f8ace.css.map",
-    "main.01cf618d.js.map": "/prachiKotadia/static/js/main.01cf618d.js.map"
+    "main.9f8ee65d.js.map": "/prachiKotadia/static/js/main.9f8ee65d.js.map"
   },
   "entrypoints": [
     "static/css/main.635f8ace.css",
-    "static/js/main.01cf618d.js"
+    "static/js/main.9f8ee65d.js"
   ]
 }
