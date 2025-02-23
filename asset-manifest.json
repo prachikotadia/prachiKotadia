@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/prachiKotadia/static/css/main.8e2a457b.css",
+    "main.css": "/prachiKotadia/static/css/main.233f6803.css",
     "main.js": "/prachiKotadia/static/js/main.2124a4ad.js",
     "static/media/SQM_ResearchPaper.pdf": "/prachiKotadia/static/media/SQM_ResearchPaper.575492264598d7d63e9b.pdf",
     "static/media/image1.jpg": "/prachiKotadia/static/media/image1.aa6606805eee1b1f1100.jpg",
@@ -26,11 +26,11 @@
     "static/media/dots-bg-dark.svg": "/prachiKotadia/static/media/dots-bg-dark.3fb919e37bd3f4cdeed2.svg",
     "static/media/dots-bg.svg": "/prachiKotadia/static/media/dots-bg.f9af2a6a4e3508808a05.svg",
     "index.html": "/prachiKotadia/index.html",
-    "main.8e2a457b.css.map": "/prachiKotadia/static/css/main.8e2a457b.css.map",
+    "main.233f6803.css.map": "/prachiKotadia/static/css/main.233f6803.css.map",
     "main.2124a4ad.js.map": "/prachiKotadia/static/js/main.2124a4ad.js.map"
   },
   "entrypoints": [
-    "static/css/main.8e2a457b.css",
+    "static/css/main.233f6803.css",
     "static/js/main.2124a4ad.js"
   ]
 }
