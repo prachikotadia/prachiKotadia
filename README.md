@@ -34,6 +34,7 @@ Welcome to my **Personal Developer Portfolio**, a modern, interactive, and visua
 ---
 ## 📂 Project Structure
 
+```bash
 /src
 │── /assets           # Images & icons
 │── /components       # Reusable components (Navbar, Footer, Contact, etc.)
@@ -42,7 +43,7 @@ Welcome to my **Personal Developer Portfolio**, a modern, interactive, and visua
 │── index.js          # Entry point
 │── styles.css        # Global styles
 │── theme.js          # Theme configuration for Dark & Light modes
-
+```
 
 ---
 
