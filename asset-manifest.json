@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/prachiKotadia/static/css/main.2de8dd1a.css",
-    "main.js": "/prachiKotadia/static/js/main.70db4466.js",
+    "main.js": "/prachiKotadia/static/js/main.5c02116e.js",
     "static/media/SQM_ResearchPaper.pdf": "/prachiKotadia/static/media/SQM_ResearchPaper.575492264598d7d63e9b.pdf",
     "static/media/image1.jpg": "/prachiKotadia/static/media/image1.aa6606805eee1b1f1100.jpg",
     "static/media/profile.jpg": "/prachiKotadia/static/media/profile.ea23c843b7e57fa84549.jpg",
@@ -14,12 +14,12 @@
     "static/media/blog-5.webp": "/prachiKotadia/static/media/blog-5.70715991d676ede542ba.webp",
     "static/media/charusat.jpg": "/prachiKotadia/static/media/charusat.efbb0097c8282c8190ee.jpg",
     "static/media/resume.pdf": "/prachiKotadia/static/media/resume.6dae671bce11f04f9da5.pdf",
-    "static/media/proj-1.png": "/prachiKotadia/static/media/proj-1.1cb7c9ce30fe662c22aa.png",
     "static/media/blog-1.svg": "/prachiKotadia/static/media/blog-1.f765e1b0fff9fb909ed6db7a682ac4e2.svg",
-    "static/media/cryptoverse.png": "/prachiKotadia/static/media/cryptoverse.9082016cd20b7f1e0ae0.png",
+    "static/media/proj-1.png": "/prachiKotadia/static/media/proj-1.f40a934ef4b81fa08cf2.png",
     "static/media/blog-3.svg": "/prachiKotadia/static/media/blog-3.6746a86faea2f6e46ed596388bc91e1c.svg",
     "static/media/blog-2.webp": "/prachiKotadia/static/media/blog-2.30058b96037f09a7c649.webp",
     "static/media/trophy-1.jpeg": "/prachiKotadia/static/media/trophy-1.1f9748c2af06a1a4a0a7.jpeg",
+    "static/media/proj-2.webp": "/prachiKotadia/static/media/proj-2.ac6e5ac1d8d33fbbccd6.webp",
     "static/media/service-3.svg": "/prachiKotadia/static/media/service-3.5ce3e21e961c980ca809977cf695357b.svg",
     "static/media/service-2.svg": "/prachiKotadia/static/media/service-2.360040db94db03a3ca860042e67c4912.svg",
     "static/media/service-1.svg": "/prachiKotadia/static/media/service-1.e6772bd53c577af49129f09d020b488f.svg",
@@ -27,10 +27,10 @@
     "static/media/dots-bg.svg": "/prachiKotadia/static/media/dots-bg.f9af2a6a4e3508808a05.svg",
     "index.html": "/prachiKotadia/index.html",
     "main.2de8dd1a.css.map": "/prachiKotadia/static/css/main.2de8dd1a.css.map",
-    "main.70db4466.js.map": "/prachiKotadia/static/js/main.70db4466.js.map"
+    "main.5c02116e.js.map": "/prachiKotadia/static/js/main.5c02116e.js.map"
   },
   "entrypoints": [
     "static/css/main.2de8dd1a.css",
-    "static/js/main.70db4466.js"
+    "static/js/main.5c02116e.js"
   ]
 }
