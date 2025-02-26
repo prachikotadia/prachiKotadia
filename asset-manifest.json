@@ -1,23 +1,30 @@
 {
   "files": {
-    "main.css": "/prachiKotadia/static/css/main.2de8dd1a.css",
-    "main.js": "/prachiKotadia/static/js/main.5d093200.js",
+    "main.css": "/prachiKotadia/static/css/main.dbac98ae.css",
+    "main.js": "/prachiKotadia/static/js/main.d42cd670.js",
+    "static/media/git2.webp": "/prachiKotadia/static/media/git2.ff7d093197c2feed8989.webp",
     "static/media/SQM_ResearchPaper.pdf": "/prachiKotadia/static/media/SQM_ResearchPaper.575492264598d7d63e9b.pdf",
     "static/media/image1.jpg": "/prachiKotadia/static/media/image1.aa6606805eee1b1f1100.jpg",
     "static/media/profile.jpg": "/prachiKotadia/static/media/profile.ea23c843b7e57fa84549.jpg",
     "static/media/chicago.png": "/prachiKotadia/static/media/chicago.7d6be8b8c91cfaf2ead7.png",
-    "static/media/travel.png": "/prachiKotadia/static/media/travel.3f1e703c327327f3a246.png",
     "static/media/SE_ResearchPaper.pdf": "/prachiKotadia/static/media/SE_ResearchPaper.dc470da4625f563f310c.pdf",
     "static/media/Final_Term_Paper_SPM.pdf": "/prachiKotadia/static/media/Final_Term_Paper_SPM.a61cf3aa573986568623.pdf",
     "static/media/profilePicture.jpg": "/prachiKotadia/static/media/profilePicture.1da9e88b83a3f7497348.jpg",
     "static/media/image2.jpg": "/prachiKotadia/static/media/image2.d14b4f5dfd52d7e2ce33.jpg",
     "static/media/blog-5.webp": "/prachiKotadia/static/media/blog-5.70715991d676ede542ba.webp",
     "static/media/charusat.jpg": "/prachiKotadia/static/media/charusat.efbb0097c8282c8190ee.jpg",
+    "static/media/bigdata.jpeg": "/prachiKotadia/static/media/bigdata.ea31215d32f3ebf0542d.jpeg",
     "static/media/resume.pdf": "/prachiKotadia/static/media/resume.6dae671bce11f04f9da5.pdf",
+    "static/media/Battleship.jpg": "/prachiKotadia/static/media/Battleship.7aff54e5c2b705ca0d04.jpg",
+    "static/media/git1.webp": "/prachiKotadia/static/media/git1.4dac57daaf328f20c2a6.webp",
     "static/media/blog-1.svg": "/prachiKotadia/static/media/blog-1.f765e1b0fff9fb909ed6db7a682ac4e2.svg",
+    "static/media/Live News.jpg": "/prachiKotadia/static/media/Live News.87e9b485e4af47bb7faf.jpg",
+    "static/media/expense.png": "/prachiKotadia/static/media/expense.82e8319c0909c381ff48.png",
+    "static/media/flashcard.png": "/prachiKotadia/static/media/flashcard.5be328424f7129d0c81f.png",
     "static/media/proj-1.png": "/prachiKotadia/static/media/proj-1.c429d6c50130edd31fc9.png",
     "static/media/blog-3.svg": "/prachiKotadia/static/media/blog-3.6746a86faea2f6e46ed596388bc91e1c.svg",
     "static/media/blog-2.webp": "/prachiKotadia/static/media/blog-2.30058b96037f09a7c649.webp",
+    "static/media/stack.webp": "/prachiKotadia/static/media/stack.60c4bbf4758336117a93.webp",
     "static/media/trophy-1.jpeg": "/prachiKotadia/static/media/trophy-1.1f9748c2af06a1a4a0a7.jpeg",
     "static/media/proj-2.webp": "/prachiKotadia/static/media/proj-2.ac6e5ac1d8d33fbbccd6.webp",
     "static/media/service-3.svg": "/prachiKotadia/static/media/service-3.5ce3e21e961c980ca809977cf695357b.svg",
@@ -26,11 +33,11 @@
     "static/media/dots-bg-dark.svg": "/prachiKotadia/static/media/dots-bg-dark.3fb919e37bd3f4cdeed2.svg",
     "static/media/dots-bg.svg": "/prachiKotadia/static/media/dots-bg.f9af2a6a4e3508808a05.svg",
     "index.html": "/prachiKotadia/index.html",
-    "main.2de8dd1a.css.map": "/prachiKotadia/static/css/main.2de8dd1a.css.map",
-    "main.5d093200.js.map": "/prachiKotadia/static/js/main.5d093200.js.map"
+    "main.dbac98ae.css.map": "/prachiKotadia/static/css/main.dbac98ae.css.map",
+    "main.d42cd670.js.map": "/prachiKotadia/static/js/main.d42cd670.js.map"
   },
   "entrypoints": [
-    "static/css/main.2de8dd1a.css",
-    "static/js/main.5d093200.js"
+    "static/css/main.dbac98ae.css",
+    "static/js/main.d42cd670.js"
   ]
 }
