@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/prachiKotadia/static/css/main.124c589a.css",
-    "main.js": "/prachiKotadia/static/js/main.d42cd670.js",
+    "main.css": "/prachiKotadia/static/css/main.a10ae6a1.css",
+    "main.js": "/prachiKotadia/static/js/main.805198f5.js",
     "static/media/git2.webp": "/prachiKotadia/static/media/git2.ff7d093197c2feed8989.webp",
     "static/media/SQM_ResearchPaper.pdf": "/prachiKotadia/static/media/SQM_ResearchPaper.575492264598d7d63e9b.pdf",
-    "static/media/image1.jpg": "/prachiKotadia/static/media/image1.aa6606805eee1b1f1100.jpg",
     "static/media/profile.jpg": "/prachiKotadia/static/media/profile.ea23c843b7e57fa84549.jpg",
     "static/media/chicago.png": "/prachiKotadia/static/media/chicago.7d6be8b8c91cfaf2ead7.png",
+    "static/media/image-2.jpg": "/prachiKotadia/static/media/image-2.265eab615ac363155d1e.jpg",
     "static/media/SE_ResearchPaper.pdf": "/prachiKotadia/static/media/SE_ResearchPaper.dc470da4625f563f310c.pdf",
     "static/media/Final_Term_Paper_SPM.pdf": "/prachiKotadia/static/media/Final_Term_Paper_SPM.a61cf3aa573986568623.pdf",
     "static/media/profilePicture.jpg": "/prachiKotadia/static/media/profilePicture.1da9e88b83a3f7497348.jpg",
@@ -33,11 +33,11 @@
     "static/media/dots-bg-dark.svg": "/prachiKotadia/static/media/dots-bg-dark.3fb919e37bd3f4cdeed2.svg",
     "static/media/dots-bg.svg": "/prachiKotadia/static/media/dots-bg.f9af2a6a4e3508808a05.svg",
     "index.html": "/prachiKotadia/index.html",
-    "main.124c589a.css.map": "/prachiKotadia/static/css/main.124c589a.css.map",
-    "main.d42cd670.js.map": "/prachiKotadia/static/js/main.d42cd670.js.map"
+    "main.a10ae6a1.css.map": "/prachiKotadia/static/css/main.a10ae6a1.css.map",
+    "main.805198f5.js.map": "/prachiKotadia/static/js/main.805198f5.js.map"
   },
   "entrypoints": [
-    "static/css/main.124c589a.css",
-    "static/js/main.d42cd670.js"
+    "static/css/main.a10ae6a1.css",
+    "static/js/main.805198f5.js"
   ]
 }
