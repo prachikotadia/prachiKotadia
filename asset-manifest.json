@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/prachiKotadia/static/css/main.f2f3943e.css",
-    "main.js": "/prachiKotadia/static/js/main.4105f1d0.js",
+    "main.js": "/prachiKotadia/static/js/main.0c0167e0.js",
     "static/media/git2.webp": "/prachiKotadia/static/media/git2.ff7d093197c2feed8989.webp",
     "static/media/SQM_ResearchPaper.pdf": "/prachiKotadia/static/media/SQM_ResearchPaper.575492264598d7d63e9b.pdf",
     "static/media/profile.jpg": "/prachiKotadia/static/media/profile.ea23c843b7e57fa84549.jpg",
@@ -14,7 +14,7 @@
     "static/media/blog-5.webp": "/prachiKotadia/static/media/blog-5.70715991d676ede542ba.webp",
     "static/media/charusat.jpg": "/prachiKotadia/static/media/charusat.efbb0097c8282c8190ee.jpg",
     "static/media/bigdata.jpeg": "/prachiKotadia/static/media/bigdata.ea31215d32f3ebf0542d.jpeg",
-    "static/media/resume.pdf": "/prachiKotadia/static/media/resume.6dae671bce11f04f9da5.pdf",
+    "static/media/resume.pdf": "/prachiKotadia/static/media/resume.d94c9f5e2b56d48ce57c.pdf",
     "static/media/Battleship.jpg": "/prachiKotadia/static/media/Battleship.7aff54e5c2b705ca0d04.jpg",
     "static/media/git1.webp": "/prachiKotadia/static/media/git1.4dac57daaf328f20c2a6.webp",
     "static/media/blog-1.svg": "/prachiKotadia/static/media/blog-1.f765e1b0fff9fb909ed6db7a682ac4e2.svg",
@@ -34,10 +34,10 @@
     "static/media/dots-bg.svg": "/prachiKotadia/static/media/dots-bg.f9af2a6a4e3508808a05.svg",
     "index.html": "/prachiKotadia/index.html",
     "main.f2f3943e.css.map": "/prachiKotadia/static/css/main.f2f3943e.css.map",
-    "main.4105f1d0.js.map": "/prachiKotadia/static/js/main.4105f1d0.js.map"
+    "main.0c0167e0.js.map": "/prachiKotadia/static/js/main.0c0167e0.js.map"
   },
   "entrypoints": [
     "static/css/main.f2f3943e.css",
-    "static/js/main.4105f1d0.js"
+    "static/js/main.0c0167e0.js"
   ]
 }
